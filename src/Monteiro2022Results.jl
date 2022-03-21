@@ -2,8 +2,9 @@ module Monteiro2022Results
 export julia_main
 
 using JuMP, Ipopt, DataFrames, CSV, HCEstimator
-include("./DERs.jl")
-using .DERs
+
+include("./Scenario.jl")
+import .Scenario
 
 function load_sys()::DataFrames.DataFrame
     return DataFrame(CSV.File("src/case33.csv"))
@@ -21,21 +22,17 @@ function build_substation()::HCEstimator.Substation
 end
 
 
-function build_sys(data::DataFrames.DataFrame)::HCEstimator.System
+function build_sys(data::DataFrames.DataFrame, add_der)::HCEstimator.System
     sub = build_substation()
     sys = DistSystem.factory_system(data, 0.93, 1.05, sub)
-    DERs.add_ders!(sys, 0.0)
+    sys = add_der(sys)
     sys.m_load = [0.5, 0.8, 1.0]
     sys.m_new_dg = [-1.0, 0.0, 1]
+    sys.time_curr = 1.0
     return sys
 end
 
-function julia_main()::Cint
-    println("Stated!")
-    println("Loading data...")
-    data = load_sys()
-    sys = build_sys(data)
-    println("Loaded!")
+function run_optmization(sys)
     println("Building model...")
     @time model = build_model(Model(Ipopt.Optimizer), sys)
     set_optimizer_attribute(model, "expect_infeasible_problem", "yes")
@@ -43,15 +40,38 @@ function julia_main()::Cint
     set_optimizer_attribute(model, "constr_viol_tol", 0.0005)
     set_optimizer_attribute(model, "mumps_mem_percent", 500)
     set_silent(model)
-
-    println("Builded!")
     println("Optimizing...")
     @time optimize!(model)
     println("Finished!")
-
     println("STATUS: ", termination_status(model))
-    println("Hosting Capacity: ", round(objective_value(model), digits=3), " MVA")
-    println("Exting..") 
+    if termination_status(model) == MOI.LOCALLY_SOLVED
+        println("Hosting Capacity: ", round(objective_value(model), digits=3), " MVA")
+    end
+
+end
+
+
+
+function julia_main()::Cint
+    println("Stated!")
+    println("Loading data...")
+    data = load_sys()
+
+    ders = [
+        Scenario.ess_dispached,
+        Scenario.dg_dispached,
+        Scenario.renewable,
+        Scenario.ess,
+        Scenario.ev
+        ]
+
+    add_der(sys) = Scenario.scenario(0.0, ders)(sys)
+    sys = build_sys(data, add_der)
+
+
+    run_optmization(sys)
+
+    println("Exting..")
     return 0
 end
 end # module
