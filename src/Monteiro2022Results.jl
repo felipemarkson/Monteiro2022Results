@@ -24,7 +24,7 @@ end
 function build_sys(data::DataFrames.DataFrame)::HCEstimator.System
     sub = build_substation()
     sys = DistSystem.factory_system(data, 0.93, 1.05, sub)
-    DERs.add_ders!(sys, 0.1)
+    DERs.add_ders!(sys, 0.0)
     sys.m_load = [0.5, 0.8, 1.0]
     sys.m_new_dg = [-1.0, 0.0, 1]
     return sys
@@ -37,16 +37,21 @@ function julia_main()::Cint
     sys = build_sys(data)
     println("Loaded!")
     println("Building model...")
-    model = build_model(Model(Ipopt.Optimizer), sys)
+    @time model = build_model(Model(Ipopt.Optimizer), sys)
     set_optimizer_attribute(model, "expect_infeasible_problem", "yes")
     set_optimizer_attribute(model, "timing_statistics", "yes")
-    set_optimizer_attribute(model, "mumps_mem_percent", 2000)
+    set_optimizer_attribute(model, "constr_viol_tol", 0.0005)
+    set_optimizer_attribute(model, "mumps_mem_percent", 500)
+    set_silent(model)
 
     println("Builded!")
     println("Optimizing...")
-    optimize!(model)
+    @time optimize!(model)
     println("Finished!")
+
+    println("STATUS: ", termination_status(model))
     println("Hosting Capacity: ", round(objective_value(model), digits=3), " MVA")
+    println("Exting..") 
     return 0
 end
 end # module

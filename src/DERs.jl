@@ -73,24 +73,25 @@ end
 
 function add_ders!(sys::HCEstimator.System, α::Float64)
     renewable_config = DERConfig(false, true, 0.10/(1-α), α)
-    dispatch_config = DERConfig(true, true, 0.5/(1-α), α)
-    ess_config = DERConfig(true, true, 0.03/(1-α), α)
-    ev_config = DERConfig(false, true, 0.03/(1-α), α)
-    full_dispatch_config = DERConfig(true, true, 0.5, 0.99)
+    dispatch_config = DERConfig(true, true, 0.1/(1-α), α)
+    ess_config = DERConfig(true, true, 0.1/(1-α), α)
+    ev_config = DERConfig(false, true, 0.1/(1-α), α)
+    full_dispatch_config = DERConfig(true, true, 0.3, 0.9999)
 
     # sys.dgs = [ess(foo_config, 33), ess(foo_config, 22)]
     sys.dgs = [
         dg(full_dispatch_config, 18),
-        dg(dispatch_config, 25),
         dg(full_dispatch_config, 33),
-        dg(dispatch_config, 22),
-        dg(dispatch_config, 13),
+        # dg(dispatch_config, 25),        
+        dg(renewable_config, 22),
+        dg(renewable_config, 13),
+        #dg(renewable_config, 6),
         ess(ess_config, 12),
-        ev_charger(ev_config, 6),
+        ess(ess_config, 29),
+        #ess(ess_config, 6),
         ev_charger(ev_config, 16),
-        # ev_charger(ev_config, 24),
-        # ev_charger(ev_config, 20),
-        # ev_charger(ev_config, 29),
+        ev_charger(ev_config, 24),
+        #ev_charger(ev_config, 20),        
         # ev_charger(ev_config, 11),
     ]
     sys
