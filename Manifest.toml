@@ -164,11 +164,11 @@ uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
 
 [[HCEstimator]]
 deps = ["DataFrames", "JuMP"]
-git-tree-sha1 = "c8577d5ea969ec7a7ae958d4715eee23990377aa"
+git-tree-sha1 = "13db35c52df2ef8cd3f8042b45e410924ce5314a"
 repo-rev = "master"
-repo-url = "https://github.com/felipemarkson/HCEstimator.jl"
+repo-url = "https://github.com/felipemarkson/HCEstimator.jl.git"
 uuid = "58746d35-f72f-4511-a7fb-329db4d2f166"
-version = "0.1.1"
+version = "0.1.4"
 
 [[InlineStrings]]
 deps = ["Parsers"]
