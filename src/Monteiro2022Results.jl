@@ -5,7 +5,6 @@ using JuMP, Ipopt, DataFrames, CSV, HCEstimator
 
 include("./Scenario.jl")
 import .Scenario
-
 function load_sys()::DataFrames.DataFrame
     return DataFrame(CSV.File("src/case33.csv"))
 end
@@ -32,22 +31,33 @@ function build_sys(data::DataFrames.DataFrame, add_der)::HCEstimator.System
     return sys
 end
 
-function run_optmization(sys)
+function run_optmization(sys, model)
     println("Building model...")
-    @time model = build_model(Model(Ipopt.Optimizer), sys)
-    set_optimizer_attribute(model, "expect_infeasible_problem", "yes")
-    set_optimizer_attribute(model, "timing_statistics", "yes")
-    set_optimizer_attribute(model, "constr_viol_tol", 0.0005)
-    set_optimizer_attribute(model, "mumps_mem_percent", 500)
-    set_silent(model)
+    @time model = build_model(model, sys)
     println("Optimizing...")
     @time optimize!(model)
     println("Finished!")
     println("STATUS: ", termination_status(model))
-    if termination_status(model) == MOI.LOCALLY_SOLVED
-        println("Hosting Capacity: ", round(objective_value(model), digits=3), " MVA")
+    if termination_status(model) == MOI.LOCALLY_SOLVED || termination_status(model) == MOI.OPTIMAL
+        println("Hosting Capacity: ", round(objective_value(model), digits=6), " MVA")
     end
 
+end
+
+function generate_model(opt)
+    model = Model(opt)
+    if solver_name(model) == "Ipopt"
+        set_optimizer_attribute(model, "expect_infeasible_problem", "no")
+        set_optimizer_attribute(model, "timing_statistics", "yes")
+
+        set_optimizer_attribute(model, "tol", 1e-4)
+        set_optimizer_attribute(model, "constr_viol_tol",  1e-4)
+        set_optimizer_attribute(model, "dual_inf_tol",  1e-4)
+        set_optimizer_attribute(model, "compl_inf_tol",  1e-4)
+        set_optimizer_attribute(model, "mumps_mem_percent", 1000)
+    end
+    return model
+    
 end
 
 
@@ -65,12 +75,9 @@ function julia_main()::Cint
         Scenario.ev
         ]
 
-    add_der(sys) = Scenario.scenario(0.0, ders)(sys)
-    sys = build_sys(data, add_der)
-
-
-    run_optmization(sys)
-
+    add_der(sys) = Scenario.scenario(0.1, ders)(sys)
+    sys = build_sys(data, add_der) 
+    run_optmization(sys, generate_model(Ipopt.Optimizer))
     println("Exting..")
     return 0
 end
