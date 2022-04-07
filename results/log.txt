@@ -1,0 +1,221 @@
+Stated!
+Loading data...
+Scenario: S0
+   with α = 0.0
+       Building Model...
+       Solving...
+  0.619824 seconds (3.13 M allocations: 69.613 MiB, 3.78% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.561446 MVA
+   Finished!!
+   with α = 0.025
+       Building Model...
+       Solving...
+  0.617801 seconds (3.13 M allocations: 69.613 MiB, 3.42% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.561446 MVA
+   Finished!!
+   with α = 0.05
+       Building Model...
+       Solving...
+  0.611372 seconds (3.13 M allocations: 69.613 MiB, 2.81% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.561446 MVA
+   Finished!!
+   with α = 0.075
+       Building Model...
+       Solving...
+  0.611066 seconds (3.13 M allocations: 69.613 MiB, 2.75% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.561446 MVA
+   Finished!!
+   with α = 0.1
+       Building Model...
+       Solving...
+  0.618015 seconds (3.13 M allocations: 69.613 MiB, 2.86% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.561446 MVA
+   Finished!!
+Scenario: S5
+   with α = 0.0
+       Building Model...
+       Solving...
+ 65.281906 seconds (291.87 M allocations: 6.065 GiB, 3.08% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.466287 MVA
+   Finished!!
+   with α = 0.025
+       Building Model...
+       Solving...
+ 54.831396 seconds (223.98 M allocations: 4.726 GiB, 4.31% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.471519 MVA
+   Finished!!
+   with α = 0.05
+       Building Model...
+       Solving...
+ 54.145095 seconds (221.42 M allocations: 4.677 GiB, 2.52% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.476759 MVA
+   Finished!!
+   with α = 0.075
+       Building Model...
+       Solving...
+ 55.043922 seconds (215.14 M allocations: 4.553 GiB, 4.39% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.482012 MVA
+   Finished!!
+   with α = 0.1
+       Building Model...
+       Solving...
+ 71.374971 seconds (261.04 M allocations: 5.473 GiB, 4.25% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.48722 MVA
+   Finished!!
+Scenario: S4
+   with α = 0.0
+       Building Model...
+       Solving...
+ 60.510550 seconds (292.56 M allocations: 6.053 GiB, 4.21% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.364184 MVA
+   Finished!!
+   with α = 0.025
+       Building Model...
+       Solving...
+ 48.978638 seconds (204.90 M allocations: 4.334 GiB, 4.67% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.369413 MVA
+   Finished!!
+   with α = 0.05
+       Building Model...
+       Solving...
+ 47.348556 seconds (187.36 M allocations: 3.991 GiB, 4.89% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.37465 MVA
+   Finished!!
+   with α = 0.075
+       Building Model...
+       Solving...
+ 47.612063 seconds (192.46 M allocations: 4.089 GiB, 4.95% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.379881 MVA
+   Finished!!
+   with α = 0.1
+       Building Model...
+       Solving...
+ 45.572988 seconds (181.15 M allocations: 3.868 GiB, 4.65% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.385105 MVA
+   Finished!!
+Scenario: S1
+   with α = 0.0
+       Building Model...
+       Solving...
+  0.593827 seconds (2.65 M allocations: 60.136 MiB)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.66346 MVA
+   Finished!!
+   with α = 0.025
+       Building Model...
+       Solving...
+  0.588388 seconds (2.65 M allocations: 60.136 MiB)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.66346 MVA
+   Finished!!
+   with α = 0.05
+       Building Model...
+       Solving...
+  0.642296 seconds (2.65 M allocations: 60.136 MiB, 6.90% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.66346 MVA
+   Finished!!
+   with α = 0.075
+       Building Model...
+       Solving...
+  0.590622 seconds (2.65 M allocations: 60.136 MiB)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.66346 MVA
+   Finished!!
+   with α = 0.1
+       Building Model...
+       Solving...
+  0.633606 seconds (2.65 M allocations: 60.136 MiB, 7.16% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.66346 MVA
+   Finished!!
+Scenario: S3
+   with α = 0.0
+       Building Model...
+       Solving...
+ 17.887424 seconds (79.32 M allocations: 1.646 GiB, 7.62% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.665015 MVA
+   Finished!!
+   with α = 0.025
+       Building Model...
+       Solving...
+ 14.539280 seconds (63.02 M allocations: 1.324 GiB, 3.19% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.665262 MVA
+   Finished!!
+   with α = 0.05
+       Building Model...
+       Solving...
+ 15.209913 seconds (59.88 M allocations: 1.264 GiB, 7.27% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.665537 MVA
+   Finished!!
+   with α = 0.075
+       Building Model...
+       Solving...
+ 13.356729 seconds (54.11 M allocations: 1.149 GiB, 2.77% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.665773 MVA
+   Finished!!
+   with α = 0.1
+       Building Model...
+       Solving...
+ 13.837895 seconds (54.11 M allocations: 1.149 GiB, 6.75% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.666023 MVA
+   Finished!!
+Scenario: S2
+   with α = 0.0
+       Building Model...
+       Solving...
+ 16.878108 seconds (73.75 M allocations: 1.540 GiB, 2.23% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.56265 MVA
+   Finished!!
+   with α = 0.025
+       Building Model...
+       Solving...
+ 15.550073 seconds (60.80 M allocations: 1.281 GiB, 6.09% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.562899 MVA
+   Finished!!
+   with α = 0.05
+       Building Model...
+       Solving...
+ 13.760706 seconds (59.91 M allocations: 1.263 GiB, 2.44% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.563157 MVA
+   Finished!!
+   with α = 0.075
+       Building Model...
+       Solving...
+ 13.617623 seconds (54.46 M allocations: 1.155 GiB, 6.00% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.563412 MVA
+   Finished!!
+   with α = 0.1
+       Building Model...
+       Solving...
+ 14.878086 seconds (60.18 M allocations: 1.269 GiB, 2.24% gc time)
+       STATUS: LOCALLY_SOLVED
+       Hosting Capacity: 0.563663 MVA
+   Finished!!
+Salving results...
+Exting...
+0
