@@ -92,7 +92,7 @@ julia> include("src/main.jl")
 
 This project uses [```Pluto.jl```](https://github.com/fonsp/Pluto.jl) as a notebook. 
 
-After ```2. Start Julia in the current repository``` you should be able to run:
+After [start Julia in the current repository](#2-start-julia-in-the-current-repository) you should be able to run:
 
 ```julia
 julia> import Pluto; Pluto.run()
