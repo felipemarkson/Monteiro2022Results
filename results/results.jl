@@ -33,7 +33,7 @@ The Mathematical model can be found on [HCEstimator.jl](https://github.com/felip
 
 # ╔═╡ e5ab79a3-93f7-4cee-833b-b93208ba9c1b
 md"""
-## Estimation for both, DG and EV
+## Estimation for DG and EV together (ESS case)
 """
 
 # ╔═╡ cbb949c8-9b1e-4259-a10a-bec02d34a3b2
@@ -1302,15 +1302,15 @@ version = "0.9.1+5"
 # ╟─ed9a9920-d42f-4194-89f5-1e9dabdb632d
 # ╟─aee0ec29-e86a-4671-ab7b-079a09e43cd8
 # ╟─e5ab79a3-93f7-4cee-833b-b93208ba9c1b
-# ╟─cbb949c8-9b1e-4259-a10a-bec02d34a3b2
+# ╠═cbb949c8-9b1e-4259-a10a-bec02d34a3b2
 # ╟─44b1a084-c497-48d6-a9cc-40504861518e
 # ╟─e5f30ea8-233e-49f0-99e1-fcc1ee51480b
 # ╟─c63d9a42-26a7-4b93-b262-58d1ade44364
-# ╟─4840aeef-f486-4773-a496-989fdebb356e
+# ╠═4840aeef-f486-4773-a496-989fdebb356e
 # ╟─0ab817fa-0cf4-402a-8e72-1bb1955326d6
 # ╟─65453080-2f34-4b7b-916d-b7b1fe229c06
 # ╟─8ab2dcba-f391-47c6-957d-8b1778820f41
-# ╟─98fea30b-a5ef-4f13-a1ae-191dc89fa908
+# ╠═98fea30b-a5ef-4f13-a1ae-191dc89fa908
 # ╟─45d080be-ccb1-43b1-bc8d-7d6aea16bcbe
 # ╟─9cd18e74-0a2e-49c9-baae-3b9f27dbd4fe
 # ╟─00000000-0000-0000-0000-000000000001
