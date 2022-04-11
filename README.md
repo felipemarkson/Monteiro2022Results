@@ -4,7 +4,7 @@ The Mathematical model can be found in [HCEstimator.jl](https://github.com/felip
 
 ## Scenarios:
 
-- S1: No DGs and EV.
+- S1: No Distributed Generation (DG), Electrical Vehicles Charger (EV) or Energy Storage System (ESS).
 - S2: 3º Party 0.1 MW Renewable DGs on buses 26, 29, 13, and 6
 - S3: Same of S2 and 3º Party 50kW/50kWh ESSs on buses 4and 32
 - S4: Same of S2 and 3º Party 50kW EV chargers on buses 17 and 20
@@ -13,6 +13,14 @@ The Mathematical model can be found in [HCEstimator.jl](https://github.com/felip
 - S7: Same as S5 and same as S3
 - S8: Same as S5 and same as S4
 - S9: Same of S5, same of S4 and 3º Party 50kW/50kWh ESSs on buses 4 and 32
+
+## Results:
+
+It was genereted tree types of results:
+
+1. Estimation of Hosting Capacity (HC) for DG and EV together (ESS case).
+2. Estimation of HC only for DG.
+3. Estimation of HC only for EV. 
 
 Results can be seen [here](results/results.pdf).
 
@@ -43,7 +51,7 @@ julia --project=.
 This command will install all dependencies in the current environment keeping your Julia installation clean.
 
 ### 3. Run the ```main.jl``` file
-The main file generete the results for both DG and EV Hosting capacity estimatio.
+The main file generete the results for DG and EV Hosting capacity estimation together.
 ```julia
 julia> include("src/main.jl")
 ```
