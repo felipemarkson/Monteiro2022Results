@@ -1,6 +1,6 @@
 # Monteiro2022Results
 
-The Mathematical model can be found on [HCEstimator.jl](https://github.com/felipemarkson/HCEstimator.jl)
+The Mathematical model can be found in [HCEstimator.jl](https://github.com/felipemarkson/HCEstimator.jl)
 
 ## Scenarios:
 
@@ -99,6 +99,4 @@ julia> import Pluto; Pluto.run()
 ```
 
 Then, open the [```results/results.jl```](results/results.jl) in Pluto.
-
-
 
