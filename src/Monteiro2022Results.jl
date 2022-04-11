@@ -28,7 +28,7 @@ function build_sys(data::DataFrames.DataFrame, add_der)::HCEstimator.System
     sys = DistSystem.factory_system(data, 0.93, 1.05, sub)
     sys = add_der(sys)
     sys.m_load = [0.6, 0.8, 1.0]
-    sys.m_new_dg = [-1.0, 0.0]
+    sys.m_new_dg = [-1.0, 0.0, 1.0]
     sys.time_curr = 1.0
     return sys
 end
@@ -104,7 +104,7 @@ function julia_main()::Cint
     end
 
     println("Salving results...")
-    CSV.write("results/results_ev.csv", df)
+    CSV.write("results/results.csv", df)
     println("Exting...")
     return 0
 end
