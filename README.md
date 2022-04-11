@@ -14,4 +14,4 @@ The Mathematical model can be found on [HCEstimator.jl](https://github.com/felip
 - S8: Same of S5 and same of S4
 - S9: Same of S5, same of S4 and 3º Party 50kW/50kWh ESSs on buses 4 and 32
 
-Results can be seen [here](results/results.jl.html).
+Results can be seen [here](results/results.pdf).
