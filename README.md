@@ -60,7 +60,7 @@ function build_sys(data::DataFrames.DataFrame, add_der)::HCEstimator.System
     sys = DistSystem.factory_system(data, 0.93, 1.05, sub)
     sys = add_der(sys)
     sys.m_load = [0.6, 0.8, 1.0]
-    sys.m_new_dg = [0.0, 1.0] # The only change occurs here
+    sys.m_new_dg = [-1.0, 0.0] # The only change occurs here
     sys.time_curr = 1.0
     return sys
 end
@@ -75,7 +75,7 @@ function build_sys(data::DataFrames.DataFrame, add_der)::HCEstimator.System
     sys = DistSystem.factory_system(data, 0.93, 1.05, sub)
     sys = add_der(sys)
     sys.m_load = [0.6, 0.8, 1.0]
-    sys.m_new_dg = [-1.0, 0.0] # The only change occurs here
+    sys.m_new_dg = [0.0, 1.0] # The only change occurs here
     sys.time_curr = 1.0
     return sys
 end
