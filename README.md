@@ -2,7 +2,7 @@
 
 The Mathematical model can be found in [HCEstimator.jl](https://github.com/felipemarkson/HCEstimator.jl)
 
-## Scenarios:
+## Scenarios
 
 - S1: No Distributed Generation (DG), Electrical Vehicles Charger (EV) or Energy Storage System (ESS).
 - S2: 3º Party 0.1 MW Renewable DGs on buses 26, 29, 13, and 6
@@ -14,7 +14,7 @@ The Mathematical model can be found in [HCEstimator.jl](https://github.com/felip
 - S8: Same as S5 and same as S4
 - S9: Same of S5, same of S4 and 3º Party 50kW/50kWh ESSs on buses 4 and 32
 
-## Results:
+## Results
 
 It was genereted tree types of results:
 
@@ -90,7 +90,7 @@ end
 ```
 
 #### Run again
-After choose the evaluation tu can be able to run:
+After choose the evaluation you can be able to run:
 ```julia
 julia> include("src/main.jl")
 ```
