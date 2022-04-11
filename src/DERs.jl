@@ -24,7 +24,7 @@ function configure_limits!(MW::Vector{Float64}, MVAr::Vector{Float64}, configs::
 end
 
 function dg(configs::Config, bus)
-    power = configs.power #if configs.α < 1.0  configs.power/(1 - configs.α) else  configs.power end
+    power = configs.power 
     MW = [0.0, power]
     MVAr = [-power, power]
 
@@ -50,8 +50,8 @@ function dg(configs::Config, bus)
 end
 
 function ess(configs::Config, bus)
-    power = configs.power #if configs.α < 1.0  configs.power/(1 - configs.α) else  configs.power end
-    MW = [0.0, power]
+    power = configs.power 
+    MW = [-power, power]
     MVAr = [-power, power]
 
     MW, MVAr = configure_limits!(MW, MVAr, configs)
@@ -76,8 +76,8 @@ function ess(configs::Config, bus)
 end
 
 function ev_charger(configs::Config, bus)
-    power = configs.power #if configs.α < 1.0  configs.power/(1 - configs.α) else  configs.power end
-    MW = [0.0, power]
+    power = configs.power 
+    MW = [-power, 0.0]
     MVAr = [-power, power]
     MW, MVAr = configure_limits!(MW, MVAr, configs)
     return DistSystem.DER(
