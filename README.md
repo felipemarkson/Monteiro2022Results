@@ -8,7 +8,7 @@ The Mathematical model can be found in [HCEstimator.jl](https://github.com/felip
 - S2: 3º Party 0.1 MW Renewable DGs on buses 26, 29, 13, and 6
 - S3: Same of S2 and 3º Party 50kW/50kWh ESSs on buses 4and 32
 - S4: Same of S2 and 3º Party 50kW EV chargers on buses 17 and 20
-- S5: Full dispaced 0.1 MVA DG on buses 18, 33, 22, and 25
+- S5: Full dispached 0.1 MVA DG on buses 18, 33, 22, and 25
 - S6: Same as S5 and same as S2
 - S7: Same as S5 and same as S3
 - S8: Same as S5 and same as S4
