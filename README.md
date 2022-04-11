@@ -1,6 +1,6 @@
 # Monteiro2022Results
 
-The Mathematical model can be found on [HCEstimator.jl](https://github.com/felipemarkson/HCEstimator.jl)
+The Mathematical model can be found in [HCEstimator.jl](https://github.com/felipemarkson/HCEstimator.jl)
 
 ## Scenarios:
 
@@ -15,6 +15,7 @@ The Mathematical model can be found on [HCEstimator.jl](https://github.com/felip
 - S9: Same of S5, same of S4 and 3º Party 50kW/50kWh ESSs on buses 4 and 32
 
 Results can be seen [here](results/results.pdf).
+<<<<<<< HEAD
 
 ## How to run
 
@@ -102,3 +103,5 @@ Then, open the [```results/results.jl```](results/results.jl) in Pluto.
 
 
 
+=======
+>>>>>>> c4ec5ae (Update README.md)
