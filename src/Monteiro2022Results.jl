@@ -56,33 +56,34 @@ function julia_main()::Cint
     println("Loading data...")
     data = load_sys()
 
-    ders_scenario = Dict(
-        "S5" => [
-            Scenario.renewable,
-            Scenario.ess_dispached,
-            Scenario.ev,
+    ders_scenario = [
+        [
             Scenario.dg_dispached,
+            Scenario.renewable,
+            Scenario.ev,
+            Scenario.ess
         ],
-        "S4" => [Scenario.dg_dispached, Scenario.renewable, Scenario.ev],
-        "S3" => [Scenario.dg_dispached, Scenario.ess_dispached, Scenario.renewable],
-        "S2" => [Scenario.dg_dispached, Scenario.renewable],
-        "S1" => [Scenario.dg_dispached, Scenario.ess_dispached],
-        "S0" => [Scenario.dg_dispached],
-    )
+        [Scenario.dg_dispached, Scenario.renewable, Scenario.ev],
+        [Scenario.dg_dispached, Scenario.renewable, Scenario.ess],
+        [Scenario.dg_dispached, Scenario.renewable],
+        [Scenario.dg_dispached],
+        [Scenario.renewable, Scenario.ev],
+        [Scenario.renewable, Scenario.ess],
+        [Scenario.renewable],
+        [],
+    ]
+    ders_scenario = reverse(ders_scenario)
+
     A = [0.0, 0.025, 0.05, 0.075, 0.1]
 
-    results = Dict(
-        (key, [NaN, NaN, NaN, NaN, NaN])
-        for key in keys(ders_scenario))
-    results["α"] = A
-
-    df = DataFrame(results)
-    for (key, ders) in ders_scenario
-        println("Scenario: ", key)
-        for (i, α) in enumerate(A)
+    df = DataFrame(Scenario=String[], alpha=Float64[], HC=Float64[])
+    for (i, ders) in enumerate(ders_scenario)
+        println("Scenario: ", i)
+        for α in A
             println("   with α = ", α)
             add_der(sys) = Scenario.scenario(α, ders)(sys)
             sys = build_sys(data, add_der)
+            println("       with HC modes = ", sys.m_new_dg)
             model = Model(Ipopt.Optimizer)
             model = set_options!(model)
             println("       Building Model...")
@@ -92,7 +93,9 @@ function julia_main()::Cint
             println("       STATUS: ", termination_status(model))
             if termination_status(model) == MOI.LOCALLY_SOLVED || termination_status(model) == MOI.OPTIMAL
                 println("       Hosting Capacity: ", round(objective_value(model), digits=6), " MVA")
-                df[i, key] = objective_value(model)
+                push!(df, ("S$(i)", α, objective_value(model)))
+            else
+                error("Model infeasible!")
             end
             println("   Finished!!")
 
@@ -101,7 +104,7 @@ function julia_main()::Cint
     end
 
     println("Salving results...")
-    CSV.write("results/results.csv", df)
+    CSV.write("results/results_ev.csv", df)
     println("Exting...")
     return 0
 end
