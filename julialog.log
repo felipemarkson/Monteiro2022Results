@@ -1,0 +1,1373 @@
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit https://github.com/coin-or/Ipopt
+******************************************************************************
+
+################################## MODE: both ######################## 
+Stated!
+Loading data...
+       Building Model...
+       Solving...
+  8.392349 seconds (11.24 M allocations: 637.592 MiB, 2.29% gc time, 1.66% compilation time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+   9 │ S1            0.0  0.139968
+   Finished!!
+       Building Model...
+       Solving...
+  0.493347 seconds (1.82 M allocations: 42.550 MiB, 13.27% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+  18 │ S1          0.025  0.139968
+   Finished!!
+       Building Model...
+       Solving...
+  0.419356 seconds (1.82 M allocations: 42.550 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+  27 │ S1           0.05  0.139968
+   Finished!!
+       Building Model...
+       Solving...
+  0.468627 seconds (1.83 M allocations: 42.665 MiB, 10.07% gc time, 1.11% compilation time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+  36 │ S1          0.075  0.139968
+   Finished!!
+       Building Model...
+       Solving...
+  0.426521 seconds (1.82 M allocations: 42.550 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+  45 │ S1            0.1  0.139968
+   Finished!!
+       Building Model...
+       Solving...
+ 12.796317 seconds (62.51 M allocations: 1.303 GiB, 5.45% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼────────────────────────────
+ 765 │ S2            0.0  0.14021
+   Finished!!
+       Building Model...
+       Solving...
+  9.820490 seconds (42.06 M allocations: 919.478 MiB, 5.82% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼─────────────────────────────
+ 1485 │ S2          0.025  0.140407
+   Finished!!
+       Building Model...
+       Solving...
+  9.474183 seconds (39.14 M allocations: 860.210 MiB, 8.72% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼─────────────────────────────
+ 2205 │ S2           0.05  0.140611
+   Finished!!
+       Building Model...
+       Solving...
+  8.983938 seconds (37.93 M allocations: 836.427 MiB, 2.86% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼─────────────────────────────
+ 2925 │ S2          0.075  0.140812
+   Finished!!
+       Building Model...
+       Solving...
+  9.133106 seconds (34.75 M allocations: 771.307 MiB, 9.79% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼────────────────────────────
+ 3645 │ S2            0.1  0.14101
+   Finished!!
+       Building Model...
+       Solving...
+118.411177 seconds (452.51 M allocations: 9.601 GiB, 3.17% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 12717 │ S3            0.0  0.0403942
+   Finished!!
+       Building Model...
+       Solving...
+101.461169 seconds (416.69 M allocations: 8.854 GiB, 3.62% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 21789 │ S3          0.025  0.0455802
+   Finished!!
+       Building Model...
+       Solving...
+ 92.231521 seconds (378.59 M allocations: 8.106 GiB, 3.61% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 30861 │ S3           0.05  0.050777
+   Finished!!
+       Building Model...
+       Solving...
+ 92.582254 seconds (373.04 M allocations: 8.000 GiB, 3.84% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 39933 │ S3          0.075  0.0559706
+   Finished!!
+       Building Model...
+       Solving...
+ 90.602008 seconds (357.14 M allocations: 7.679 GiB, 2.65% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 49005 │ S3            0.1  0.0611605
+   Finished!!
+       Building Model...
+       Solving...
+ 55.831040 seconds (241.72 M allocations: 5.065 GiB, 3.22% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 53037 │ S4            0.0  0.0407434
+   Finished!!
+       Building Model...
+       Solving...
+ 47.231779 seconds (195.53 M allocations: 4.141 GiB, 4.66% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 57069 │ S4          0.025  0.0434309
+   Finished!!
+       Building Model...
+       Solving...
+ 44.806568 seconds (198.33 M allocations: 4.188 GiB, 3.20% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 61101 │ S4           0.05  0.0461331
+   Finished!!
+       Building Model...
+       Solving...
+ 41.975178 seconds (169.09 M allocations: 3.619 GiB, 5.25% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 65133 │ S4          0.075  0.0488192
+   Finished!!
+       Building Model...
+       Solving...
+ 42.413449 seconds (171.56 M allocations: 3.667 GiB, 4.59% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 69165 │ S4            0.1  0.0515095
+   Finished!!
+       Building Model...
+       Solving...
+  0.516310 seconds (2.20 M allocations: 50.862 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 69210 │ S5            0.0  0.537667
+   Finished!!
+       Building Model...
+       Solving...
+  0.516042 seconds (2.20 M allocations: 50.862 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 69255 │ S5          0.025  0.537667
+   Finished!!
+       Building Model...
+       Solving...
+  0.514246 seconds (2.20 M allocations: 50.862 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 69300 │ S5           0.05  0.537667
+   Finished!!
+       Building Model...
+       Solving...
+  0.515903 seconds (2.20 M allocations: 50.862 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 69345 │ S5          0.075  0.537667
+   Finished!!
+       Building Model...
+       Solving...
+  0.513018 seconds (2.20 M allocations: 50.862 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 69390 │ S5            0.1  0.537667
+   Finished!!
+       Building Model...
+       Solving...
+ 15.767515 seconds (68.91 M allocations: 1.437 GiB, 4.27% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 70686 │ S6            0.0  0.538759
+   Finished!!
+       Building Model...
+       Solving...
+ 13.462583 seconds (56.86 M allocations: 1.197 GiB, 3.92% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 71982 │ S6          0.025  0.538955
+   Finished!!
+       Building Model...
+       Solving...
+ 12.790312 seconds (50.97 M allocations: 1.083 GiB, 4.35% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 73278 │ S6           0.05  0.539158
+   Finished!!
+       Building Model...
+       Solving...
+ 15.085848 seconds (58.56 M allocations: 1.233 GiB, 2.49% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 74574 │ S6          0.075  0.539358
+   Finished!!
+       Building Model...
+       Solving...
+ 12.842624 seconds (49.99 M allocations: 1.065 GiB, 2.23% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 75870 │ S6            0.1  0.539554
+   Finished!!
+       Building Model...
+       Solving...
+147.653058 seconds (570.95 M allocations: 11.999 GiB, 2.61% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 90126 │ S7            0.0  0.438971
+   Finished!!
+       Building Model...
+       Solving...
+134.692069 seconds (608.77 M allocations: 12.648 GiB, 3.86% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 104382 │ S7          0.025  0.444144
+   Finished!!
+       Building Model...
+       Solving...
+121.420268 seconds (460.25 M allocations: 9.780 GiB, 3.35% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 118638 │ S7           0.05  0.449328
+   Finished!!
+       Building Model...
+       Solving...
+120.426561 seconds (440.51 M allocations: 9.393 GiB, 3.82% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 132894 │ S7          0.075  0.45451
+   Finished!!
+       Building Model...
+       Solving...
+123.431267 seconds (451.31 M allocations: 9.616 GiB, 3.47% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 147150 │ S7            0.1  0.459707
+   Finished!!
+       Building Model...
+       Solving...
+ 74.897557 seconds (296.95 M allocations: 6.183 GiB, 4.46% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 153486 │ S8            0.0  0.439211
+   Finished!!
+       Building Model...
+       Solving...
+ 59.392302 seconds (230.28 M allocations: 4.853 GiB, 2.81% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 159822 │ S8          0.025  0.441906
+   Finished!!
+       Building Model...
+       Solving...
+ 63.495084 seconds (247.81 M allocations: 5.197 GiB, 4.43% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 166158 │ S8           0.05  0.444577
+   Finished!!
+       Building Model...
+       Solving...
+ 59.477656 seconds (228.86 M allocations: 4.829 GiB, 4.14% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 172494 │ S8          0.075  0.447261
+   Finished!!
+       Building Model...
+       Solving...
+ 58.773143 seconds (221.52 M allocations: 4.681 GiB, 2.56% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 178830 │ S8            0.1  0.449943
+   Finished!!
+       Building Model...
+       Solving...
+695.262175 seconds (2.58 G allocations: 53.873 GiB, 7.63% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 246222 │ S9            0.0  0.339521
+   Finished!!
+       Building Model...
+       Solving...
+606.825835 seconds (2.31 G allocations: 48.418 GiB, 7.81% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 313614 │ S9          0.025  0.347168
+   Finished!!
+       Building Model...
+       Solving...
+590.792686 seconds (2.10 G allocations: 44.382 GiB, 7.66% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 381006 │ S9           0.05  0.354828
+   Finished!!
+       Building Model...
+       Solving...
+566.803249 seconds (2.04 G allocations: 43.022 GiB, 7.53% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 448398 │ S9          0.075  0.362485
+   Finished!!
+       Building Model...
+       Solving...
+608.202407 seconds (2.22 G allocations: 46.639 GiB, 7.80% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 515790 │ S9            0.1  0.370161
+   Finished!!
+Salving results...
+Exting...
+################################## MODE: dg ######################## 
+Stated!
+Loading data...
+       Building Model...
+       Solving...
+  0.416960 seconds (1.42 M allocations: 32.818 MiB, 13.84% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼────────────────────────────
+   6 │ S1            0.0   2.2426
+   Finished!!
+       Building Model...
+       Solving...
+  0.416502 seconds (1.42 M allocations: 32.818 MiB, 15.61% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼────────────────────────────
+  12 │ S1          0.025   2.2426
+   Finished!!
+       Building Model...
+       Solving...
+  0.419032 seconds (1.42 M allocations: 32.818 MiB, 14.48% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼────────────────────────────
+  18 │ S1           0.05   2.2426
+   Finished!!
+       Building Model...
+       Solving...
+  0.417357 seconds (1.42 M allocations: 32.818 MiB, 15.68% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼────────────────────────────
+  24 │ S1          0.075   2.2426
+   Finished!!
+       Building Model...
+       Solving...
+  0.418135 seconds (1.42 M allocations: 32.818 MiB, 14.33% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼────────────────────────────
+  30 │ S1            0.1   2.2426
+   Finished!!
+       Building Model...
+       Solving...
+ 13.994425 seconds (61.78 M allocations: 1.262 GiB, 25.85% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼────────────────────────────
+ 510 │ S2            0.0  1.84278
+   Finished!!
+       Building Model...
+       Solving...
+  7.465526 seconds (30.23 M allocations: 662.520 MiB, 5.06% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼────────────────────────────
+ 990 │ S2          0.025  1.85281
+   Finished!!
+       Building Model...
+       Solving...
+  9.068351 seconds (33.64 M allocations: 733.109 MiB, 4.31% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼────────────────────────────
+ 1470 │ S2           0.05  1.86286
+   Finished!!
+       Building Model...
+       Solving...
+  9.379695 seconds (34.78 M allocations: 756.639 MiB, 3.27% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼────────────────────────────
+ 1950 │ S2          0.075  1.87291
+   Finished!!
+       Building Model...
+       Solving...
+  6.527359 seconds (26.26 M allocations: 580.165 MiB, 7.71% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼────────────────────────────
+ 2430 │ S2            0.1  1.88297
+   Finished!!
+       Building Model...
+       Solving...
+ 90.600162 seconds (361.63 M allocations: 7.586 GiB, 2.67% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼────────────────────────────
+ 8478 │ S3            0.0  1.74297
+   Finished!!
+       Building Model...
+       Solving...
+ 78.151130 seconds (321.45 M allocations: 6.769 GiB, 3.70% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 14526 │ S3          0.025  1.75805
+   Finished!!
+       Building Model...
+       Solving...
+ 76.792792 seconds (281.37 M allocations: 5.989 GiB, 2.25% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 20574 │ S3           0.05  1.77312
+   Finished!!
+       Building Model...
+       Solving...
+ 95.964359 seconds (348.97 M allocations: 7.338 GiB, 3.82% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 26622 │ S3          0.075  1.78822
+   Finished!!
+       Building Model...
+       Solving...
+ 89.032072 seconds (356.85 M allocations: 7.479 GiB, 3.51% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 32670 │ S3            0.1   1.8033
+   Finished!!
+       Building Model...
+       Solving...
+ 49.054106 seconds (285.83 M allocations: 5.791 GiB, 5.43% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 35358 │ S4            0.0  1.84234
+   Finished!!
+       Building Model...
+       Solving...
+ 33.374126 seconds (162.69 M allocations: 3.381 GiB, 3.31% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 38046 │ S4          0.025  1.85241
+   Finished!!
+       Building Model...
+       Solving...
+ 35.211367 seconds (141.66 M allocations: 2.988 GiB, 5.38% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 40734 │ S4           0.05  1.86249
+   Finished!!
+       Building Model...
+       Solving...
+ 44.887238 seconds (179.17 M allocations: 3.744 GiB, 2.79% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 43422 │ S4          0.075  1.87258
+   Finished!!
+       Building Model...
+       Solving...
+ 31.173064 seconds (126.67 M allocations: 2.688 GiB, 5.11% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 46110 │ S4            0.1  1.88267
+   Finished!!
+       Building Model...
+       Solving...
+  0.414950 seconds (1.74 M allocations: 39.700 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 46140 │ S5            0.0  2.25102
+   Finished!!
+       Building Model...
+       Solving...
+  0.407361 seconds (1.74 M allocations: 39.700 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 46170 │ S5          0.025  2.25102
+   Finished!!
+       Building Model...
+       Solving...
+  0.406396 seconds (1.74 M allocations: 39.700 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 46200 │ S5           0.05  2.25102
+   Finished!!
+       Building Model...
+       Solving...
+  0.406513 seconds (1.74 M allocations: 39.700 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 46230 │ S5          0.075  2.25102
+   Finished!!
+       Building Model...
+       Solving...
+  0.406521 seconds (1.74 M allocations: 39.700 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 46260 │ S5            0.1  2.25102
+   Finished!!
+       Building Model...
+       Solving...
+ 12.919819 seconds (89.89 M allocations: 1.810 GiB, 4.09% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 47124 │ S6            0.0  1.85114
+   Finished!!
+       Building Model...
+       Solving...
+  9.268804 seconds (49.80 M allocations: 1.029 GiB, 3.49% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 47988 │ S6          0.025  1.86124
+   Finished!!
+       Building Model...
+       Solving...
+  8.661923 seconds (40.10 M allocations: 862.516 MiB, 3.84% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 48852 │ S6           0.05  1.87135
+   Finished!!
+       Building Model...
+       Solving...
+  8.302509 seconds (32.71 M allocations: 715.676 MiB, 3.49% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 49716 │ S6          0.075  1.88103
+   Finished!!
+       Building Model...
+       Solving...
+  7.892619 seconds (32.12 M allocations: 703.420 MiB, 4.27% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 50580 │ S6            0.1  1.89158
+   Finished!!
+       Building Model...
+       Solving...
+ 93.596363 seconds (372.64 M allocations: 7.831 GiB, 2.68% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 60084 │ S7            0.0  1.75155
+   Finished!!
+       Building Model...
+       Solving...
+ 89.837489 seconds (404.50 M allocations: 8.411 GiB, 3.80% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 69588 │ S7          0.025  1.76669
+   Finished!!
+       Building Model...
+       Solving...
+ 85.442454 seconds (315.06 M allocations: 6.688 GiB, 2.13% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 79092 │ S7           0.05  1.78185
+   Finished!!
+       Building Model...
+       Solving...
+ 88.399538 seconds (326.06 M allocations: 6.910 GiB, 3.83% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 88596 │ S7          0.075  1.79701
+   Finished!!
+       Building Model...
+       Solving...
+ 90.469241 seconds (333.69 M allocations: 7.056 GiB, 3.72% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼────────────────────────────
+ 98100 │ S7            0.1   1.8122
+   Finished!!
+       Building Model...
+       Solving...
+ 46.593881 seconds (196.68 M allocations: 4.101 GiB, 3.02% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 102324 │ S8            0.0  1.85093
+   Finished!!
+       Building Model...
+       Solving...
+ 40.404186 seconds (169.84 M allocations: 3.560 GiB, 2.25% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 106548 │ S8          0.025   1.8611
+   Finished!!
+       Building Model...
+       Solving...
+ 39.618472 seconds (152.36 M allocations: 3.217 GiB, 6.18% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 110772 │ S8           0.05  1.87125
+   Finished!!
+       Building Model...
+       Solving...
+ 35.376365 seconds (139.01 M allocations: 2.956 GiB, 3.25% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 114996 │ S8          0.075  1.88142
+   Finished!!
+       Building Model...
+       Solving...
+ 39.767239 seconds (153.11 M allocations: 3.234 GiB, 6.32% gc time)
+       STATUS: LOCALLY_SOLVED
+  Activating environment at `~/Monteiro2022Results/Project.toml`
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 119220 │ S8            0.1  1.89159
+   Finished!!
+       Building Model...
+       Solving...
+461.510353 seconds (1.71 G allocations: 35.656 GiB, 2.18% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 164148 │ S9            0.0  1.75135
+   Finished!!
+       Building Model...
+       Solving...
+442.514010 seconds (1.64 G allocations: 34.134 GiB, 2.54% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 209076 │ S9          0.025  1.76653
+   Finished!!
+       Building Model...
+       Solving...
+410.666461 seconds (1.46 G allocations: 30.687 GiB, 2.30% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 254004 │ S9           0.05  1.78173
+   Finished!!
+       Building Model...
+       Solving...
+413.066413 seconds (1.45 G allocations: 30.544 GiB, 2.99% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 298932 │ S9          0.075  1.79697
+   Finished!!
+       Building Model...
+       Solving...
+500.725249 seconds (1.87 G allocations: 38.814 GiB, 2.37% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼────────────────────────────
+ 343860 │ S9            0.1  1.81215
+   Finished!!
+Salving results...
+Exting...
+################################## MODE: ev ######################## 
+Stated!
+Loading data...
+       Building Model...
+       Solving...
+  0.278439 seconds (1.10 M allocations: 26.023 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+   6 │ S1            0.0  0.139968
+   Finished!!
+       Building Model...
+       Solving...
+  0.276154 seconds (1.10 M allocations: 26.023 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+  12 │ S1          0.025  0.139968
+   Finished!!
+       Building Model...
+       Solving...
+  0.276749 seconds (1.10 M allocations: 26.023 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+  18 │ S1           0.05  0.139968
+   Finished!!
+       Building Model...
+       Solving...
+  0.276354 seconds (1.10 M allocations: 26.023 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+  24 │ S1          0.075  0.139968
+   Finished!!
+       Building Model...
+       Solving...
+  0.275316 seconds (1.10 M allocations: 26.023 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+  30 │ S1            0.1  0.139968
+   Finished!!
+       Building Model...
+       Solving...
+  8.795519 seconds (44.61 M allocations: 949.929 MiB, 6.29% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+ 510 │ S2            0.0  0.140213
+   Finished!!
+       Building Model...
+       Solving...
+  6.123550 seconds (26.49 M allocations: 584.174 MiB, 5.43% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+ Row │ Scenario  alpha    HC
+     │ String    Float64  Float64
+─────┼─────────────────────────────
+ 990 │ S2          0.025  0.140407
+   Finished!!
+       Building Model...
+       Solving...
+  5.438481 seconds (23.99 M allocations: 533.105 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼─────────────────────────────
+ 1470 │ S2           0.05  0.140611
+   Finished!!
+       Building Model...
+       Solving...
+  5.758500 seconds (25.92 M allocations: 572.409 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼─────────────────────────────
+ 1950 │ S2          0.075  0.140812
+   Finished!!
+       Building Model...
+       Solving...
+  5.858571 seconds (25.69 M allocations: 568.400 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼────────────────────────────
+ 2430 │ S2            0.1  0.14101
+   Finished!!
+       Building Model...
+       Solving...
+ 89.447420 seconds (362.23 M allocations: 7.622 GiB, 2.59% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+  Row │ Scenario  alpha    HC
+      │ String    Float64  Float64
+──────┼──────────────────────────────
+ 8478 │ S3            0.0  0.0403984
+   Finished!!
+       Building Model...
+       Solving...
+ 72.416954 seconds (299.81 M allocations: 6.343 GiB, 3.61% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 14526 │ S3          0.025  0.0455801
+   Finished!!
+       Building Model...
+       Solving...
+ 70.271942 seconds (276.08 M allocations: 5.882 GiB, 4.28% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 20574 │ S3           0.05  0.050777
+   Finished!!
+       Building Model...
+       Solving...
+ 73.864310 seconds (285.06 M allocations: 6.059 GiB, 3.87% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 26622 │ S3          0.075  0.0559705
+   Finished!!
+       Building Model...
+       Solving...
+ 70.962207 seconds (276.08 M allocations: 5.882 GiB, 2.32% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 32670 │ S3            0.1  0.0611605
+   Finished!!
+       Building Model...
+       Solving...
+ 41.117657 seconds (186.17 M allocations: 3.870 GiB, 6.22% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 35358 │ S4            0.0  0.0407434
+   Finished!!
+       Building Model...
+       Solving...
+ 31.415286 seconds (139.54 M allocations: 2.940 GiB, 3.26% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 38046 │ S4          0.025  0.0434309
+   Finished!!
+       Building Model...
+       Solving...
+ 30.271401 seconds (121.75 M allocations: 2.594 GiB, 6.07% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 40734 │ S4           0.05  0.0461266
+   Finished!!
+       Building Model...
+       Solving...
+ 30.102764 seconds (124.10 M allocations: 2.641 GiB, 2.70% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 43422 │ S4          0.075  0.0488192
+   Finished!!
+       Building Model...
+       Solving...
+ 31.279700 seconds (127.37 M allocations: 2.704 GiB, 5.56% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼──────────────────────────────
+ 46110 │ S4            0.1  0.0515093
+   Finished!!
+       Building Model...
+       Solving...
+  0.348426 seconds (1.39 M allocations: 32.420 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 46140 │ S5            0.0  0.537667
+   Finished!!
+       Building Model...
+       Solving...
+  0.340200 seconds (1.39 M allocations: 32.420 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 46170 │ S5          0.025  0.537667
+   Finished!!
+       Building Model...
+       Solving...
+  0.339150 seconds (1.39 M allocations: 32.420 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 46200 │ S5           0.05  0.537667
+   Finished!!
+       Building Model...
+       Solving...
+  0.375725 seconds (1.39 M allocations: 32.420 MiB, 9.04% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 46230 │ S5          0.075  0.537667
+   Finished!!
+       Building Model...
+       Solving...
+  0.338458 seconds (1.39 M allocations: 32.420 MiB)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 46260 │ S5            0.1  0.537667
+   Finished!!
+       Building Model...
+       Solving...
+ 10.780581 seconds (60.80 M allocations: 1.245 GiB, 4.82% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 47124 │ S6            0.0  0.538759
+   Finished!!
+       Building Model...
+       Solving...
+  7.456628 seconds (30.81 M allocations: 674.765 MiB, 3.50% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 47988 │ S6          0.025  0.538955
+   Finished!!
+       Building Model...
+       Solving...
+  7.825384 seconds (33.47 M allocations: 727.797 MiB, 4.41% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 48852 │ S6           0.05  0.539158
+   Finished!!
+       Building Model...
+       Solving...
+  7.791590 seconds (31.17 M allocations: 682.965 MiB, 4.45% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 49716 │ S6          0.075  0.539358
+   Finished!!
+       Building Model...
+       Solving...
+  7.742194 seconds (30.58 M allocations: 670.710 MiB, 3.23% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 50580 │ S6            0.1  0.539554
+   Finished!!
+       Building Model...
+       Solving...
+ 96.602768 seconds (379.38 M allocations: 7.981 GiB, 2.61% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 60084 │ S7            0.0  0.438971
+   Finished!!
+       Building Model...
+       Solving...
+ 89.365657 seconds (373.53 M allocations: 7.827 GiB, 2.25% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 69588 │ S7          0.025  0.444144
+   Finished!!
+       Building Model...
+       Solving...
+ 89.611162 seconds (395.18 M allocations: 8.227 GiB, 4.47% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 79092 │ S7           0.05  0.449328
+   Finished!!
+       Building Model...
+       Solving...
+ 88.255433 seconds (360.40 M allocations: 7.569 GiB, 3.64% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 88596 │ S7          0.075  0.454529
+   Finished!!
+       Building Model...
+       Solving...
+ 87.087459 seconds (337.50 M allocations: 7.130 GiB, 3.48% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+   Row │ Scenario  alpha    HC
+       │ String    Float64  Float64
+───────┼─────────────────────────────
+ 98100 │ S7            0.1  0.459687
+   Finished!!
+       Building Model...
+       Solving...
+ 44.854257 seconds (184.08 M allocations: 3.857 GiB, 2.48% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 102324 │ S8            0.0  0.439211
+   Finished!!
+       Building Model...
+       Solving...
+ 37.791396 seconds (148.97 M allocations: 3.152 GiB, 5.27% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 106548 │ S8          0.025  0.441889
+   Finished!!
+       Building Model...
+       Solving...
+ 36.107007 seconds (153.31 M allocations: 3.233 GiB, 2.93% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 110772 │ S8           0.05  0.444577
+   Finished!!
+       Building Model...
+       Solving...
+ 38.005650 seconds (151.21 M allocations: 3.202 GiB, 4.66% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 114996 │ S8          0.075  0.447261
+   Finished!!
+       Building Model...
+       Solving...
+ 35.160341 seconds (139.01 M allocations: 2.956 GiB, 4.07% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 119220 │ S8            0.1  0.449943
+   Finished!!
+       Building Model...
+       Solving...
+478.816621 seconds (1.81 G allocations: 37.775 GiB, 1.75% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 164148 │ S9            0.0  0.339536
+   Finished!!
+       Building Model...
+       Solving...
+408.452128 seconds (1.57 G allocations: 32.787 GiB, 2.43% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 209076 │ S9          0.025  0.347168
+   Finished!!
+       Building Model...
+       Solving...
+388.428986 seconds (1.46 G allocations: 30.687 GiB, 2.62% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 254004 │ S9           0.05  0.354828
+   Finished!!
+       Building Model...
+       Solving...
+392.709643 seconds (1.48 G allocations: 30.986 GiB, 2.85% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 298932 │ S9          0.075  0.362485
+   Finished!!
+       Building Model...
+       Solving...
+404.189436 seconds (1.56 G allocations: 32.632 GiB, 2.73% gc time)
+       STATUS: LOCALLY_SOLVED
+DataFrameRow
+    Row │ Scenario  alpha    HC
+        │ String    Float64  Float64
+────────┼─────────────────────────────
+ 343860 │ S9            0.1  0.370139
+   Finished!!
+Salving results...
+Exting...
