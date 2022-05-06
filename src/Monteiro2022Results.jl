@@ -49,18 +49,15 @@ function set_options!(model)
 
 end
 
-function get_ders_operation(sys, model)
+function get_ders_operation!(sys, model, df, i, alpha)
     (Ω, bΩ, L, K, D, S) = Tools.Get.sets(sys)
-    dims_der = Tuple(length(set) for set in (D, L, K, S))
-    Pᴰᴱᴿ = zeros(Float64, dims_der)
-    Qᴰᴱᴿ = zeros(Float64, dims_der)
+    HC = objective_value(model)
 
     for d = D, l = L, k = K, s = S
-        Pᴰᴱᴿ[d, l, k, s] = Tools.Get.power_active_DER(model, d, l, k, s)
-        Qᴰᴱᴿ[d, l, k, s] = Tools.Get.power_reactive_DER(model, d, l, k, s)
+        P = Tools.Get.power_active_DER(model, d, l, k, s)
+        Q = Tools.Get.power_reactive_DER(model, d, l, k, s)
+        push!(df, ("S$(i)", alpha, HC, P, Q, d, l, k, s))
     end
-    return Pᴰᴱᴿ, Qᴰᴱᴿ
-
 end
 
 
@@ -90,17 +87,23 @@ function julia_main(mode)::Cint
 
     A = [0.0, 0.025, 0.05, 0.075, 0.1]
 
-    df = DataFrame(Scenario=String[], alpha=Float64[], HC=Float64[])
+    df = DataFrame(
+        Scenario=String[], alpha=Float64[], HC=Float64[],
+        P=Float64[],
+        Q=Float64[],
+        der=Int[],
+        l=Float64[],
+        k=Float64[],
+        s=Float64[],
+    )
 
-    Sder_scenario = []
     for (i, ders) in enumerate(ders_scenario)
-        println("Scenario: ", i)
-        Sder_alpha = []
+        # println("Scenario: ", i)
         for α in A
-            println("   with α = ", α)
+            # println("   with α = ", α)
             add_der(sys) = Scenario.scenario(α, ders)(sys)
             sys = build_sys(data, add_der, mode["hc"])
-            println("       with HC modes = ", sys.m_new_dg)
+            # println("       with HC modes = ", sys.m_new_dg)
             model = Model(Ipopt.Optimizer)
             model = set_options!(model)
             println("       Building Model...")
@@ -109,21 +112,18 @@ function julia_main(mode)::Cint
             @time optimize!(model)
             println("       STATUS: ", termination_status(model))
             if termination_status(model) == MOI.LOCALLY_SOLVED || termination_status(model) == MOI.OPTIMAL
-                println("       Hosting Capacity: ", round(objective_value(model), digits=6), " MVA")
-                push!(df, ("S$(i)", α, objective_value(model)))
-                P, Q = get_ders_operation(sys, model)
-                push!(Sder_alpha, (P, Q))
+                # println("       Hosting Capacity: ", round(objective_value(model), digits=6), " MVA")
+                get_ders_operation!(sys, model, df, i, α)
+                println(df[end, [:Scenario, :alpha, :HC]])
             else
                 error("Model infeasible!")
             end
-            
+
             println("   Finished!!")
         end
-        push!(Sder_scenario, Sder_alpha)          
     end
 
     println("Salving results...")
-    save("results/Sder_scenario_$(mode["name"]).jld", "Sder_scenario", Sder_scenario)  
     CSV.write("results/results_$(mode["name"]).csv", df)
     println("Exting...")
     return 0
