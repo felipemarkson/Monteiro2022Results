@@ -1,2 +1,4 @@
 /sysimage
 /.vscode
+/results
+/.venv
