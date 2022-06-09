@@ -18,11 +18,11 @@ The Mathematical model can be found in [HCEstimator.jl](https://github.com/felip
 
 It was genereted tree types of results:
 
-1. Estimation of Hosting Capacity (HC) for DG and EV together (ESS case).
+1. Estimation of Hosting Capacity (HC) for both DG and EV together (ESS case).
 2. Estimation of HC only for DG.
 3. Estimation of HC only for EV. 
 
-Results can be seen [here](results/results.pdf).
+Results can be seen on `results.tar.gz`. You can extract it to `results/`.
 
 ## How to run
 
@@ -98,15 +98,20 @@ julia> include("src/main.jl")
 
 ## How to generate the Plots
 
-This project uses [```Pluto.jl```](https://github.com/fonsp/Pluto.jl) as a notebook. 
+You will need Python 3.10+ to generate the plots. Then you can run:
 
-After [start Julia in the current repository](#2-start-julia-in-the-current-repository) you should be able to run:
+```bash
+# Create the virtual enviroment
+python -m venv .venv
 
-```julia
-julia> import Pluto; Pluto.run()
+# Activate the virtual enviroment
+source .venv/bin/activate
+
+# Install the requirements
+pip install -r requirements.txt
+
+# Run Jupyter Notebook
+jupyter notebook
 ```
 
-Then, open the [```results/results.jl```](results/results.jl) in Pluto.
-
-
-
+Then, open `results.ipynb` using Jupyter and run it.
